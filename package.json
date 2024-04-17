@@ -1,0 +1,17 @@
+{
+  "name": "webappsesame",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "ol": "latest",
+    "ol-ext": "^4.0.17",
+    "ol-layerswitcher": "^4.1.1"
+  }
+}
