@@ -8,9 +8,12 @@
 } */
 .header {
   grid-area: header;
-  font-size: 25px;
+  font-size: 24px;
   height: 50px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* text-align: center; */
+  font-weight: bold;
+  color : #1E90FF;
+  font-family: 'Gill Sans', 'Gill Sans MT', Arial, Helvetica, sans-serif, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -27,10 +30,10 @@ body {
 
 #ToDisplayFVC {
   height: 30px;
-  width: 250px;
+  width: 230px;
   position: absolute;
-  top: 50%;
-  right: -100px;
+  top: 15%;
+  left: 150px;
   transform: translateX(-50%);
   border: 1px solid grey;
   border-radius: 10px;
@@ -42,10 +45,10 @@ body {
 
 #ToDisplayLAI {
   height: 30px;
-  width: 250px;
+  width: 230px;
   position: absolute;
-  top: 55%;
-  right: -100px;
+  top: 22%;
+  left: 150px;
   transform: translateX(-50%);
   border: 1px solid grey;
   border-radius: 10px;
@@ -57,10 +60,10 @@ body {
 
 #ToDisplayAGB {
   height: 30px;
-  width: 250px;
+  width: 230px;
   position: absolute;
-  top: 60%;
-  right: -100px;
+  top: 29%;
+  left: 150px;
   transform: translateX(-50%);
   border: 1px solid grey;
   border-radius: 10px;
@@ -72,10 +75,10 @@ body {
 
 #ToDisplayCAR {
   height: 30px;
-  width: 250px;
+  width: 230px;
   position: absolute;
-  top: 65%;
-  right: -100px;
+  top: 36%;
+  left: 150px;
   transform: translateX(-50%);
   border: 1px solid grey;
   border-radius: 10px;
@@ -165,7 +168,7 @@ body {
 
     border: 0;
 
-    height: 250px;
+    height: 100%;
 
     margin-bottom: 10px;
 

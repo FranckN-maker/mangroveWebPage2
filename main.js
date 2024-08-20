@@ -99,10 +99,10 @@ map.addLayer(baseGroup);
 var wmsSourceFVC = new TileLayer({
     title: "Fractionnal Vegetation Index",
     source: new TileWMS({  
-    url: 'http://localhost:8080/geoserver/wms',
-    // url: 'http://mangrove-dev.ird.nc/geoserver/wms',
-    // params: { 'LAYERS': 'MangroveFirstIrdNc:FVCGeoserv', 'TILED': true },
-    params: { 'LAYERS': 'MangroveFirst:FVCGeoserv', 'TILED': true },
+    // url: 'http://localhost:8080/geoserver/wms',
+    url: 'https://sesame.ird.nc/geoserver/wms',
+    params: { 'LAYERS': 'MangroveFirstIrdNc:FVCGeoserv', 'TILED': true },
+    // params: { 'LAYERS': 'MangroveFirst:FVCGeoserv', 'TILED': true },
     serverType: 'geoserver',
     ratio: 1,
   })
@@ -111,10 +111,10 @@ var wmsSourceFVC = new TileLayer({
 var wmsSourceLAI = new TileLayer({
     title: "Leaf Area Index ",
     source: new TileWMS({ 
-    url: 'http://localhost:8080/geoserver/wms',
-    // url: 'http://mangrove-dev.ird.nc/geoserver/wms',
-      params: { 'LAYERS': 'MangroveFirstIrdNc:LAIGeoserv', 'TILED': true },
-    params: { 'LAYERS': 'MangroveFirst:LAIGeoserv', 'TILED': true},
+    // url: 'http://localhost:8080/geoserver/wms',
+    url: 'https://sesame.ird.nc/geoserver/wms',
+    params: { 'LAYERS': 'MangroveFirstIrdNc:LAIGeoserv', 'TILED': true },
+    // params: { 'LAYERS': 'MangroveFirst:LAIGeoserv', 'TILED': true},
     serverType: 'geoserver',
     ratio: 1
   })
@@ -123,10 +123,10 @@ var wmsSourceLAI = new TileLayer({
 var wmsSourceAGB = new TileLayer({
     title: "Above Ground Biomass",
     source: new TileWMS({ 
-    url: 'http://localhost:8080/geoserver/wms',
-    // url: 'http://mangrove-dev.ird.nc/geoserver/wms',
-      // params: { 'LAYERS': 'MangroveFirstIrdNc:AGBGeoserv', 'TILED': true },
-    params: { 'LAYERS': 'MangroveFirst:AGBGeoserv', 'TILED': true},
+    // url: 'http://localhost:8080/geoserver/wms',
+    url: 'https://sesame.ird.nc/geoserver/wms',
+      params: { 'LAYERS': 'MangroveFirstIrdNc:AGBGeoserv', 'TILED': true },
+    // params: { 'LAYERS': 'MangroveFirst:AGBGeoserv', 'TILED': true},
     serverType: 'geoserver',
     ratio: 1
   })
@@ -135,10 +135,10 @@ var wmsSourceAGB = new TileLayer({
 var wmsSourceCarbone = new TileLayer({
     title: "Carbone",
     source: new TileWMS({  
-    url: 'http://localhost:8080/geoserver/wms',
-    // url: 'http://mangrove-dev.ird.nc/geoserver/wms',
-    // params: { 'LAYERS': 'MangroveFirstIrdNc:CarboneGeoserv', 'TILED': true },
-    params: { 'LAYERS': 'MangroveFirst:CarboneGeoserv', 'TILED': true },
+    // url: 'http://localhost:8080/geoserver/wms',
+    url: 'https://sesame.ird.nc/geoserver/wms',
+    params: { 'LAYERS': 'MangroveFirstIrdNc:CarboneGeoserv', 'TILED': true },
+    // params: { 'LAYERS': 'MangroveFirst:CarboneGeoserv', 'TILED': true },
     serverType: 'geoserver',
     ratio: 1
   })
@@ -148,9 +148,10 @@ var wmsSourceCarbone = new TileLayer({
 var wmsSourceMAP = new TileLayer({
     title: "Carte Mangrove",
     source : new TileWMS({  
-    url: 'http://localhost:8080/geoserver/wms',
+    // url: 'http://localhost:8080/geoserver/wms',
     // url: 'http://mangrove-dev.ird.nc/geoserver/wms',
-    params: { 'LAYERS': 'MangroveFirst:MangroveKMEANS_2', 'TILED': true},
+    url: 'https://sesame.ird.nc/geoserver/wms',
+    params: { 'LAYERS': 'MangroveFirstIrdNc:MangroveKMEANS_2', 'TILED': true},
     serverType: 'geoserver',
     ratio: 1
   })
@@ -192,7 +193,7 @@ var scaleControl = new ScaleLin({
   text: true
 
 });
-map.addControl(scaleControl);
+// map.addControl(scaleControl);
 
 map.on('pointermove', function (evt) {
   if (evt.dragging) {

@@ -15,4 +15,6 @@ To generate a build ready for production:
 
     npm run build
 
-Then deploy the contents of the `dist` directory to your server.  You can also run `npm run serve` to serve the results of the `dist` directory for preview.
+Then deploy the contents of the `dist` directory to your server. You can also run `npm run serve` to serve the results of the `dist` directory for preview.
+
+Don't forget to change the Localhost fetch if you are in developement you will need to build a new geoserver in local and manage the CORS issue of FETCH.
