@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "ol": "latest",
-    "ol-ext": "^4.0.17",
+    "ol-ext": "^4.0.24",
     "ol-layerswitcher": "^4.1.1"
   }
 }
